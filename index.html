@@ -38,6 +38,29 @@
 			div {
 				display: block;
 			}
+			.button {
+				background-color: white;
+				color: black;
+				border: 2px solid #555555;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 8px;
+				transition-duration: 0.4s;
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			}
+			.button:hover {
+				background-color: #555555;
+				color: white;
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+			.button:active {
+				background-color: #000000;
+				box-shadow: 0 5px #666;
+				transform: translateY(4px);
+			}
 		</style>
 	</head>
 	<body>
@@ -45,6 +68,7 @@
 	<div id="content">
 		<div class="container" style="text-align: center;">
 			<p>You will need to click once, anywhere on this page, to make this script work. Keep this tab open for getting warning before closing the Web Browser</p>
+			<button type="button" onclick="javascript::void()" class="button">Click Here</button>
 		</div>
 	</div>
 		<script>
