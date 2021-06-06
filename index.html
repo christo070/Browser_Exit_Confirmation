@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Warning before Closing Browser</title>
+		<link rel="icon" href="alert.png" type="image/x-icon" id="titleIcon">
+		<script>
+			function Alert(){
+				alert("You will need to click once, anywhere on this page, to make this script work");
+			}
+			function changeTitleIcon(iconAddress){
+				let icon=document.getElementById('titleIcon');
+				icon.href===iconAddress;
+			}
+		</script>
+		<style>
+			body {
+				background-image: url("img3.jpg");
+				background-position: center center;
+  				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size:cover;
+				background-color: #018d86;
+				color: aliceblue; 
+			}
+			.container{
+				word-wrap: break-word;
+				border-radius: .25rem;
+				background-color: #085785;
+				position: absolute;
+  				top: 50%;
+				left: 50%;
+  				transform: translate(-50%, -50%);	
+				font-size: medium;
+				font-family:Verdana, Geneva, Tahoma, sans-serif;
+				padding: 1rem;
+				border: solid #f7f7f9;	
+			}
+			div {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+	<!--window.onbeforeunload = function() is responsible for giving alert before closing browser, other things are just for making the page look 'less boring'.-->
+	<div id="content">
+		<div class="container" style="text-align: center;">
+			<p>You will need to click once, anywhere on this page, to make this script work. Keep this tab open for getting warning before closing the Web Browser</p>
+		</div>
+	</div>
+		<script>
+			changeTitleIcon("alert.png");
+			Alert();
+			window.onbeforeunload = function() { 
+				return "Would you really like to close your browser?"; 
+			}
+		</script>
+	</body>
+</html>
