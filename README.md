@@ -25,6 +25,4 @@ Two Options :-
     1. Keep this webpage Tab open for it to work.
     
 ## Suggestions
-* This is complete frontend website, it is completely safe, does nothing in backend (i.e, nothing from server side).
-* It is better to download this Repo as it will have added advantages then.
 * If you want to try before downloading go for 2nd option in 'How to make it work?'
