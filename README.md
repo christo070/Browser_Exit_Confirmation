@@ -6,7 +6,7 @@ A simple trick to prevent accidently closing your Active Browser Session.
 * Javascript
 ## How to make it work?
 Two Options :-
-1. If you want it to work offline and online,
+1. If you want it to work when offline,
     1. Download the Repository Files to your PC. To be specific, required files to download include
         * index.html
         * img3.jpg
